@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#logo{
+	position: absolute;
+	top: 18px;
+	left: 5px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px;
+	
+}
+
+.cover-part{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 200px;
+	
+	z-index: -1;
+}
+
+.title{
+	
+	position: relative;
+	text-align: center;
+	letter-spacing: 5px;
+	text-transform: uppercase;	
+	margin-bottom: 40px;
+	margin-top: 20px;
+	color: white;
+}
+
+.img-container{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	max-width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto ;
+	grid-gap: 10%;
+	border: 1px solid #000;
+	padding: 20px;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0px 0px 50px 10px black; 	
+	
+}
+
+
+
+.img-container div{
+	padding: 0;
+}
+
+.div-box{
+	border: 1px solid #1e0411;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	
+}
+
+
+
+
+
+.Img {
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Img:hover {
+	
+	animation-name: zoomImg;
+	animation-duration: 0.8s;
+	animation-delay: 0.2s;
+}
+
+@keyframes zoomImg{
+	from {transform:scale(1)}
+	to{transform: scale(2)}
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+	position: relative;
+    margin: auto;
+	margin-top: -60px;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 40px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0,0.7);
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

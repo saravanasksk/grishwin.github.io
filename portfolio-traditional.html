@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio - Traditional</title>
+<meta name="viewport" content="width = device-width, initial-scale =1.0">
+
+<link href="css/portfolio_Styles.css" rel="stylesheet" type="text/css">
+<link href="css/portfolio_mediaStyles.css" rel="stylesheet" type="text/css">
+<link href="css/Nav_Styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="logo">
+	<p>grishwin karnal photography</p>
+
+	</div>				
+		
+
+<div class="cover-part" style="background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+">
+
+	</div>
+
+
+
+
+
+<!--Navigation-->
+
+	<nav>
+   <ul>
+     <li class="sub-menu-parent" tab-index="0">
+       <a href="index.html">Home</a>
+      
+     </li>
+     
+     <li class="sub-menu-parent" tab-index="0">
+       <a href="about.html">About</a>
+      
+     </li>
+     
+     <li class="sub-menu-parent" tab-index="0">
+       <a class="active" href="#">Portfolio</a>
+       <ul class="sub-menu">
+         <li><a href="portfolio-wild.html">wild life</a></li>
+         <li><a href="portfolio-birds.html">birds</a></li>
+         <li><a href="portfolio-bugs.html">bugs&amp; flowers</a></li>
+         <li><a href="portfolio-nature.html">nature</a></li>
+         <li><a class="active" href="portfolio-traditional.html">tradition</a></li>
+         <li><a href="portfolio-arts.html">street&amp; arts</a></li>
+       </ul></li>
+       
+        <li class="sub-menu-parent" tab-index="0">
+       <a href="contact.html">Contact</a>
+      
+     </li>
+   </ul>
+ </nav>
+				<!--Navigation end-->
+
+
+
+
+<div class="title">
+<h2>Tradition</h2>
+	</div>
+<div class="img-container" style="background-color: #f4f7f7 ">
+
+
+
+<div class="div-box">
+<img id="Img1" class="Img" src="images/traditional1.jpg" onClick="show(0)" alt="Jallikattu"
+ style="width:100%; max-width:300px"></div>
+	<div class="div-box">
+ <img id="Img2" class="Img" src="images/traditional2.jpg" onClick="show(1)" alt="Jallikattu"
+ style="width:100%; max-width:300px"></div>
+	<div class="div-box">
+ <img id="Img3" class="Img" src="images/traditional3.jpeg" onClick="show(2)" alt="Jallikattu"
+	  style="width:100%; max-width:300px"></div>
+	  <div class="div-box">
+ <img id="Img4" class="Img" src="images/traditional4.jpeg" onClick="show(3)" alt="Jallikattu"
+	  style="width:100%; max-width:300px"></div>
+	  <div class="div-box">
+ <img id="Img5" class="Img" src="images/traditional5.jpeg" onClick="show(4)" alt="monkey"
+	  style="width:100%; max-width:300px"></div>
+	  <div class="div-box">
+ <img id="Img6" class="Img" src="images/traditional6.JPG" onClick="show(5)" alt="Dharmaraja ratha, Mammallapuram"
+	  style="width:100%; max-width:300px"></div>
+	  
+	  <div class="div-box">
+ <img id="Img7" class="Img" src="images/traditional7.JPG" onClick="show(6)" alt=" Mahabalipuram Sea shore Temple"
+	  style="width:100%; max-width:300px"></div>
+	  <div class="div-box">
+ <img id="Img8" class="Img" src="images/traditional8.JPG" onClick="show(7)" alt="The Indian gaur"
+	  style="width:100%; max-width:300px"></div>
+
+
+ 
+	</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+	// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+	
+	
+	
+	
+	
+	
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+	
+	//img.onclick =
+	function show(e) {
+	var img = document.getElementsByTagName("img")[e];
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+    modal.style.display = "none";
+}
+	</script>
+</body>
+</html>

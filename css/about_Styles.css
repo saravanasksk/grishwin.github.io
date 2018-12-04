@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#logo{
+	position: absolute;
+	top: 18px;
+	left: 5px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px;
+}
+/****** about container ******/
+.about-container{
+	max-width: 1200px;
+ 	margin: 100px auto 0 auto;
+    /*background-color: grey;*/	
+}
+
+.about{
+	padding: 20px;
+	box-sizing: border-box;	
+}
+
+.about-pic{
+	background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(#434343, #000000);
+background: -o-linear-gradient(#434343, #000000);
+background: linear-gradient(#434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#img{
+	width: 350px;
+	height: 350px;
+}
+
+.about-content{
+	border-radius: 20px;
+	flex-basis: 65%;
+	background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(#434343, #000000);
+background: -o-linear-gradient(#434343, #000000);
+background: linear-gradient(#434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+}
+
+.about-pic img{
+	border: 2px solid black;
+}
+
+.about-content h1,h2,p{
+	line-height: 20px;
+	
+}
+
+.about-content h1{
+	color: ghostwhite;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-shadow: 5px 5px 5px black ;
+}
+
+
+.about-content p{
+	color: rgba(255,255,255,0.6);
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-align: justify;
+	width: 650px;
+	padding: 20px;
+	line-height: 35px;
+}
+
+.quotes
+{
+	color: rgba(255, 255, 255,1);
+}
+
+.about-content #para-main{
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	font-size: 18px;	
+}
+
+.fa-facebook{
+	cursor: pointer;
+	color: #3b5999;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

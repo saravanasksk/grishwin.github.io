@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 500px) 
+{
+	#logo{
+		display: none;
+	}
+	
+	nav{
+		height: 150px;
+	}
+	
+	
+	nav > ul > li { 
+	display: block; 
+	
+}
+	
+	nav > ul { 	 
+	text-align: center; 
+}
+	
+	nav a{
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-weight: 100;
+		padding: 0.5em;
+	}
+	
+	.sub-menu li a{
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 200;
+	
+	
+}
+	.next, .prev{
+		font-size: 13px;
+		font-weight: 400;
+		top: 37%;
+		padding: 7px;
+	}
+	
+	.img-number{
+		font-size: 10px;
+		padding: 7px;
+		font-weight: 400;
+	}
+	
+	footer{	
+		bottom: 0;
+	}
+	
+	.social-links ul li a{
+	font-size: 30px;		
+}
+
+
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 700px)
+{
+	
+	nav a {
+	font-size: 17px;
+}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1000px)
+{
+	
+	
+	
+	footer{
+		bottom: 0;
+	}
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 900px)
+{
+	#logo{
+		display: none;
+	}
+}
