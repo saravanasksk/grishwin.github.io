@@ -1,3 +1,4 @@
+
 <?php
 
 if($_POST["submit"]) {
@@ -19,13 +20,3 @@ if($_POST["submit"]) {
 
 
 
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
-</body>
-</html>

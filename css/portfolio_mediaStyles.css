@@ -21,27 +21,29 @@
 		
 		
 	}
-	
-	body {
-		
-	}
-	
+
 	.img-container .div-box{
 		
 		margin-bottom: 10px;
 	}
+	
+	
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px)
 {
 	.img-container{
-	width: 500px;
-	grid-template-columns: 48% 48% ;
-	grid-template-rows: 22% 22% 22% 22%  ;
-	grid-gap: 4%;
+	/*width: 530px;*/
+	/*grid-template-columns: 1fr 1fr ;
+	 grid-template-rows: 22% 22% 22% 22%  ;
+	grid-gap: 2%;*/
 	
 	
 }
+	
+	.div-box{
+		margin-bottom: -60px;
+	}
 }
 
 
